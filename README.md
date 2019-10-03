@@ -1,0 +1,2 @@
+# Drug-Recommendation-System
+The Drug Review dataset from the UCI Machine Learning Repository provides patent reviews on specific drugs along with related conditions.Our aim is to predict the health disorders from the patients' conditions &amp; recommend drugs for those disorders. We also provide the best drugs for a given condition based on the users' reviews. This system would assist the physician with the diagnosis.

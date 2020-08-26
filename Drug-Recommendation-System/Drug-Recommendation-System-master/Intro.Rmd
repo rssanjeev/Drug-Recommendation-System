@@ -1,0 +1,93 @@
+---
+title: "Project_Intro"
+author: "Sanjeev Ramasamy Seenivasagamani"
+date: "April 16, 2019"
+output: html_document
+---
+## Drug Recommendation System
+Classification of drugs, patient’s conditions and rating prediction
+
+### What this application about?
+
+The primary objective of this application is to make user's search for medicine easy and effective. This project was built around **UCI Machine Learning - Drug Review Dataset**.  This is a growing project, meaning, more the data, more efective the recommendaion.
+
+#### Overview:
+The Drug Review Dataset from the UCI Machine Learning Repository provides patient reviews on specific drugs along with related conditions and a 10 star patient rating reflecting overall patient satisfaction. The data was obtained by crawling online pharmaceutical review sites. Our aim is to automatically classify drug reviews into patient’s condition and predict drug ratings to recommend drugs to patients.
+
+### Goals:
+
+#### Goal 1: Exploratory Data Analysis and Pre-processing
+
+Tasks:  
+
+Perform descriptive analysis to answer questions about drug review data  
+
+Perform information retrieval and text mining (through tf-idf) to extract meaningful information from drug reviews  
+
+Expected results:  
+
+1) Understanding what kind of drugs are there, what sorts of conditions do these patients have and how many drugs are present for each condition along with seasonality of drugs  
+
+2) Vectorized drug reviews based on term frequency-inverse document frequency  
+
+#### Goal 2: Predict the patient’s condition based on the review
+
+Tasks:  
+
+Apply classification algorithms on vectorized drug reviews to predict a patient’s condition  
+
+Expected results: Accurate classification model that classifies drug reviews to match with a patient’s medical condition  
+
+Algorithms to be used for Classification:  
+
+KNN - It is simple to implement, robust to noisy training data and effective if training data is large. Our data contains 884 distinct classes which will be used ask in the classification  
+
+Naive Bayes - Robust to noise and irrelevant attributes
+It is easy and fast to predict class of test data set. It also perform well in multi class prediction
+When assumption of independence holds, a Naive Bayes classifier performs better compare to other models like logistic regression and you need less training data.  
+
+Tree Bagging - Bagging is a colloquial term for bootstrap aggregation. Bootstrap aggregation is a method that allows us to decrease the variance of an estimate by averaging multiple estimates that are measured from random subsamples of a population. It reduces overfitting that would occur in a single decision tree.  
+
+
+#### Goal 3: Cluster Analysis of drugs  
+
+Tasks:  
+
+Perform cluster analysis to find an underlying grouping of drugs  
+
+Expected results: Distinct clusters of drugs based on side effects and effectiveness  
+
+Algorithms to be used for Clustering:  
+
+K-means: Easy to implement, computationally fast if k is small and produces tighter clusters  
+
+HAC: It outputs a structure that is informative which makes it easier to decide the number of clusters  
+
+#### Goal 5: Application Development  
+
+Tasks:  
+Develop an interactive R-shiny application to implement an end-to-end analytical process of project  
+
+#### Expected results:  
+R-shiny application that performs the following:  
+
+1. Provide an exploratory data analysis on the drug review dataset  
+
+2. Predict the medical condition(s) based on user input  
+
+3. A visual representation of the medical conditions that have been clustered together based on user's reviews    
+
+4. Provide a list of recommended drugs based on the ratings of the drugs  
+
+
+##### Appendix:
+Dataset: The Drug Review Dataset from the UCI Machine Learning Repository  
+Tools: R-Studio, Rmarkdown, R-shiny  
+Algorithms:  
+Classification: KNN, Naive Bayes & Tree Bagging  
+Clustering: K-means & Hierarchical Clustering  
+Packages:  
+Data Wrangling and Data Munging: dplyr, tidyr    
+Data Visualization: ggplot2  
+Machine Learning: caret, arules, arulesViz, mlbench, rpart, C50, rattle, ElemStatLearn, klaR  
+
